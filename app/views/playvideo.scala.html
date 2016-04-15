@@ -1,0 +1,18 @@
+
+
+
+@(title: String)
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@title</title>
+</head>
+<body>
+
+<p><video src="@routes.Videos.stream("a")" autoplay controls onerror="failed(event)" ></video></p>
+<p><a href="@routes.Videos.stream("a")">Download the video file</a>.</p>
+
+</body>
+</html>

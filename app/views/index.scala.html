@@ -1,0 +1,23 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(fileList: Array[String])
+
+
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>title</title>
+</head>
+<body>
+@fileList.map{x =>
+<p>
+<a href="@routes.Videos.stream(x)">@x</a>
+ </p>
+
+}
+</body>
+</html>

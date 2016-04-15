@@ -1,0 +1,27 @@
+
+@*
+* This template takes a single argument, a String containing a
+* message to display.
+*@
+@(title: String)(linkname: String)
+
+@*
+* Call the the `main` template with two arguments. The first
+* argument is a `String` with the title of the page, the second
+* argument is an `Html` object containing the body of the page.
+*@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@title</title>
+</head>
+<body>
+<p><video src="http://localhost:9000/f" type='video/x-matroska; codecs="theora, vorbis"' autoplay controls onerror="failed(event)" ></video></p>
+<p><a href="YOU mkv FILE LINK GOES HERE TO DOWNLOAD">@linkname</a>.</p>
+</body>
+</html>
+
